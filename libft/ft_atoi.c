@@ -6,12 +6,9 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 15:52:37 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/14 16:40:01 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/02/16 08:58:18 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include<stdio.h>
-#include<stdlib.h>
 
 int	ft_atoi(const char *str)
 {
@@ -22,26 +19,18 @@ int	ft_atoi(const char *str)
 	i = 0;
 	n = 1;
 	r = 0;
-	
-	
-		while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-			i++;
-		if (str[i] == '+' || str[i] == '-')
-		{
-			if (str[i] == '-')
-				n = -1;
-			i++;
-		}
-		while (str[i] >= '0' && str[i] <= '9')
-		{
-			r = r * 10 + str[i] - '0';
-			i++;
-		}
-	
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			n = -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		r = r * 10 + str[i] - '0';
+		i++;
+	}
 	return (r * n);
-}
-	int		main(void)
-{
-	printf("%d\n", ft_atoi("  a   1 	-2147--+-ab567"));
-	printf("%d\n", atoi("    a  1  -2147--+-ab567"));
 }
