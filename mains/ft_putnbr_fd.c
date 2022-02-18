@@ -5,32 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 06:26:50 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/18 06:48:24 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/02/18 06:49:11 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/02/18 06:49:23 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-
-void	ft_putnbr_fd(int n, int fd)
+int	main()
 {
-	if (n == -2147483648)
-	{
-		ft_putnbr_fd((n / 10), 1);
-		write(fd, "8", 1);
-	}
-	else if (n < 0)
-	{
-		write (fd, "-", 1);
-		ft_putnbr_fd(-n, 1);
-	}
-	else
-	{
-		if (n > 9)
-		{
-			ft_putnbr_fd((n / 10), 1);
-		}
-		n = 48 + n % 10;
-		write (fd, &n, 1);
-	}
+	ft_putnbr_fd(2147483647, 1);
 }
