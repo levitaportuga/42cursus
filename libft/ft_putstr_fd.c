@@ -6,11 +6,11 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 06:07:11 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/18 06:24:32 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/02/19 08:40:03 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
