@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 08:40:41 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/19 10:07:02 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/02/21 17:05:15 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include<unistd.h>
 #include<string.h>
 #include<stdlib.h>
+#include<ctype.h>
+#include<stdio.h>
 
 int		ft_atoi(const char *str);
 void	ft_putchar_fd(char c, int fd);
