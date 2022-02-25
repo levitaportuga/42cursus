@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/25 05:12:15 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/25 05:19:56 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/02/25 05:01:21 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/02/25 05:02:40 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int main()
 {
-	if (c >= 32 && c <= 126)
-		return(1);
-	return(0);
-}
+    char c;
+    c = '\t';
+    printf("\nResult is passed: %d", ft_isascii(c));
+
+    c = '(';
+    printf("\nResult is passed: %d", ft_isascii(c));
+
+    c='\n';
+    printf("\nResult is passed: %d", ft_isascii(c));
+
+    return 0;
+

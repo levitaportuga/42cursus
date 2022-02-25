@@ -5,16 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/25 05:12:15 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/25 05:19:56 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/02/25 05:20:22 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/02/25 05:20:47 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int main()
 {
-	if (c >= 32 && c <= 126)
-		return(1);
-	return(0);
+    char c;
+    c = 'A';
+    printf("\nResult when uppercase alphabet is passed: %d", ft_isprint(c));
+
+    c = 'a';
+    printf("\nResult when lowercase alphabet is passed: %d", ft_isprint(c));
+
+    c='\n';
+    printf("\nResult when non-printable character is passed: %d", ft_isprint(c));
+
+    return 0;
 }
