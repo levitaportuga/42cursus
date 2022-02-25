@@ -5,17 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/24 06:31:00 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/24 06:43:48 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/02/24 06:44:09 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/02/24 06:45:37 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalnum(int c)
+int main()
 {
-	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+    char c;
+    c = 'Q';
+    printf("\nResult when uppercase alphabet is passed: %d", ft_isalnum(c));
+
+    c = 'q';
+    printf("\nResult when lowercase alphabet is passed: %d", ft_isalnum(c));
+
+    c = '4';
+    printf("\nResult when number is passed: %d", ft_isalnum(c));
+
+    c='+';
+    printf("\nResult when non-alphabetic character is passed: %d", ft_isalnum(c));
+
+    return 0;
 }

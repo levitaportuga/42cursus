@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/24 06:31:00 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/24 06:43:48 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/02/24 06:29:08 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/02/24 06:29:14 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalnum(int c)
+int main()
 {
-	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+    char c;
+    c = 'Q';
+    printf("\nResult when uppercase alphabet is passed: %d", ft_isalpha(c));
+
+    c = 'q';
+    printf("\nResult when lowercase alphabet is passed: %d", ft_isalpha(c));
+
+    c='+';
+    printf("\nResult when non-alphabetic character is passed: %d", ft_isalpha(c));
+
+    return 0;
 }
