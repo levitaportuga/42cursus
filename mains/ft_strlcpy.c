@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 07:51:07 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/02 07:51:45 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/04 10:41:00 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,8 @@ int	main()
 {
 	const char src[] = "World!";
 	char dest[] = "";
-	printf("%zu | %s", ft_strlcpy(dest, src, 3), dest);
+	printf("%zu | %s\n", ft_strlcpy(dest, src, 3), dest);
+//	const char src2[] = "World!";
+//	char dest2[] = "a";
+//	printf("%zu | %s", strlcpy(dest2, src2, 3), dest2);
 }

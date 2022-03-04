@@ -5,23 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/04 10:40:50 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/04 11:12:53 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/03/04 11:13:14 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/03/04 11:14:09 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+int	main()
 {
-	int i;
-
-	i = ft_strlen(s);
-	while (i >= 0)
-	{
-		if (s[i] == c)
-			return ((char *)s + i); 
-		i--;
-	}
-	return(0);
+	const char src [] = "alexander";
+	printf("%s", ft_strrchr(src, 'a'));
 }
