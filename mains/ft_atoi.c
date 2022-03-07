@@ -6,13 +6,13 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 08:54:39 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/16 08:57:39 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/06 04:18:04 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stdlib.h>
+#include "../libft/libft.h"
 
+int main()
 {
 	printf("%d\n", ft_atoi("   	-2147--+-ab567"));
 	printf("%d\n", atoi("      -2147--+-ab567"));

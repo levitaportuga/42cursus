@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/24 06:29:08 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/06 04:19:17 by amatos-l         ###   ########.fr       */
+/*   Created: 2022/03/06 04:26:36 by amatos-l          #+#    #+#             */
+/*   Updated: 2022/03/06 04:27:17 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft/libft.h"
 
-int main()
+int main (void)
 {
-    char c;
-    c = 'Q';
-    printf("\nResult when uppercase alphabet is passed: %d", ft_isalpha(c));
-
-    c = 'q';
-    printf("\nResult when lowercase alphabet is passed: %d", ft_isalpha(c));
-
-    c='+';
-    printf("\nResult when non-alphabetic character is passed: %d", ft_isalpha(c));
-
-    return 0;
+	char src[] = "Born to code";
+    	char dest [] = "1337 42";
+    printf("%i \n", ft_strlcat(dest, src, 20));
+    printf("%s \n", dest);
 }

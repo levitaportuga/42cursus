@@ -6,11 +6,11 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 05:01:21 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/25 05:02:40 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/06 04:20:05 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft/libft.h"
 
 int main()
 {
@@ -25,4 +25,4 @@ int main()
     printf("\nResult is passed: %d", ft_isascii(c));
 
     return 0;
-
+}

@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 08:52:59 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/02/19 10:42:07 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/07 03:56:47 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		n++;
 		i++;
 	}
-	return(i);
+	return (i);
 }
-
-int main (void)
-{
-	char src[] = "Born to code";
-    	char dest [] = "1337 42";
-    printf("%i \n", ft_strlcat(dest, src, 20));
-    printf("%s \n", dest);
-}	
