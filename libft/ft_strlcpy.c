@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 07:11:56 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/07 03:57:25 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:39:45 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	srcsize;
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
 	srcsize = ft_strlen(src);
 	i = 0;
 	if (dstsize != 0)

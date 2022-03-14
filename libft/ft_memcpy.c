@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 10:52:40 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/14 11:11:56 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:38:35 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*dest;
 	const char	*source;
 
+	if (!src && !dst)
+		return (dst);
 	i = 0;
 	dest = dst;
 	source = src;
