@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 08:40:41 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/09 06:53:34 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/14 11:22:58 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
 void	*ft_memchr(const void *str, int c, size_t n);
-void	*ft_memcpy(void *restrict dst, const void *restrict scr, size_t m);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_putchar_fd(char c, int fd);

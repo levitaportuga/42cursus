@@ -6,7 +6,7 @@
 /*   By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 11:14:36 by amatos-l          #+#    #+#             */
-/*   Updated: 2022/03/07 03:56:04 by amatos-l         ###   ########.fr       */
+/*   Updated: 2022/03/10 03:12:00 by amatos-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (s[i] == c)
-			return ((char *)s + i);
-		i++;
-	}
+	while (*s && c != *s)
+		s++;
+	if (c == *s)
+		return ((char *)s);
 	return (0);
 }
