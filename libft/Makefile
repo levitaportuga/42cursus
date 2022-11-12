@@ -3,22 +3,21 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: amatos-l <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: amatos-l <amatos-l@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/07 03:18:49 by amatos-l          #+#    #+#              #
-#    Updated: 2022/03/09 06:59:38 by amatos-l         ###   ########.fr        #
+#    Updated: 2022/11/07 16:05:52 by amatos-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -I -lft
 LIB1	= ar -rcs
 LIB2	= ranlib
-RM		= /bin/rm -f
+RM		= rm -f
 
 NAME = libft.a
 
-INCLUDE = libft.h
 SRCS 	= ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_tolower.c ft_toupper.c ft_strlen.c ft_strlcpy.c ft_strlcat.c \
 			ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c \
@@ -42,8 +41,8 @@ bonus:		$(NAME) $(BONUS_O)
 			$(LIB1) $(NAME) $(BONUS_O)
 			$(LIB2) $(NAME)
 
-.c.o:
-			$(CC) $(CFLAGS) -I$(INCLUDE) -c $< -o $(<:.c=.o)
+%.o: %.c libft.h
+			$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 			$(RM) $(OBJS) $(BONUS_O)
